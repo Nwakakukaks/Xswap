@@ -1,4 +1,4 @@
-/// DEX Contract Deployed on XDC Apothem Testnet
+/// XSwap Contract Deployed on XDC Apothem Testnet
 
 /// We are using similar to what Uniswap uses in their architecture to create contracts
 
@@ -46,8 +46,3 @@
 2. Staking reward Token - The reward token which is to be sent for the Staking users do
 3. Staking Factory - Create and Manages the various Staking Pool
 
-We have plans to allow users to pay protocol fees in the Reward Token we offer to them , in this way it can be utilised
-
-## NOTE : Swapping contracts are ready for Mainnet Deployement . The contracts are properly audited , gas optimized and quailty approved .
-
-## NOTE : LENDING and STAKING contracts Not fit for mainnet, No Audit has been done for these contracts. Issues maybe present.
