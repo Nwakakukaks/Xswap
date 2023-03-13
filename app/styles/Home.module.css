@@ -1,0 +1,15 @@
+.bg {
+    background-image: url('../assets/landing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg1 {
+    background: conic-gradient(from 200.75deg at 74.63% 35%, #05050563 0deg, #1c9bce 88.12deg, #000000 213.08deg, #07415c 306.42deg, #07921a 360deg);
+}
+
+.bg2 {
+    background-image: url('../assets/dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
