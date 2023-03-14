@@ -57,22 +57,6 @@ export default function Navbar(props) {
             </button>
           </div>
         </Link>
-        <Link href="/pool">
-          <div className="cursor-pointer hover:animate-pulse relative group py-0.5 px-0.5 ">
-            <div className="absolute -inset-1 blur-lg transition-all"></div>
-            <button className="relative active:scale-x-105 border-[#D100D1] py-1 transition-all text-md">
-              Pool
-            </button>
-          </div>
-        </Link>
-        <Link href="/stake">
-          <div className="cursor-pointer hover:animate-pulse relative group py-0.5 px-0.5 ">
-            <div className="absolute -inset-1 blur-lg transition-all"></div>
-            <button className="relative active:scale-x-105 border-[#D100D1] py-1 transition-all text-md">
-              Stake
-            </button>
-          </div>
-        </Link>
         <Link href="/lending">
           <div className="cursor-pointer hover:animate-pulse relative group py-0.5 px-0.5 ">
             <div className="absolute -inset-1 blur-lg transition-all"></div>

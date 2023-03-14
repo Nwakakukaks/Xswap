@@ -353,8 +353,9 @@ export default function Lending() {
 
   return (
     <div
-      className={`w-screen min-h-screen no-repeat bg-cover  bg-[url('../assets/landing.png')]
-      ${!expand ? `bg-[#4532a1]` : `bg-[#03071E]`}
+      className={`w-screen min-h-screen no-repeat bg-cover bg-[#07415c] ]
+      ${!expand ? `bg-[#07415c]`
+      : `bg-[#07415c]`}
           `}
     >
       <Navbar expand={expand} setExpand={setExpand} />

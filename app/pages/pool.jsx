@@ -379,11 +379,11 @@ export default function Pool() {
 
   return (
     <div
-      className={`w-screen min-h-screen no-repeat bg-cover  bg-[url('../assets/landing.png')]
+      className={`w-screen min-h-screen no-repeat bg-cover 
       ${
         !expand
-          ? `bg-[#4532a1]`
-          : `bg-[#03071E]`
+          ? `bg-[#07415c]`
+          : `bg-[#07415c]`
       }
           `}
     >

@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import hero from "../assets/index.png";
+import hero from "../assets/xdc.png";
 import Loader from "../components/Loader";
 import { Toast } from "flowbite-react";
 // import { fetchPrice } from "../api";
@@ -42,17 +42,17 @@ export default function Home() {
   return (
     <>
       <div
-        className={`w-screen min-h- pb-20 md:pb-0 lg:min-h-max no-repeat  bg-[url('../assets/landing.png')] bg-cover ${!expand
+        className={`w-screen min-h- pb-20 md:pb-0 lg:min-h-max no-repeat  bg-cover ${!expand
           ? `
             bg-cover lg:bg-center bg-no-repeat`
-          : bg-cover
+          : 'bg-[#07415c]'
           }`}
       >
         {/* <Loader /> */}
         <Navbar expand={expand} setExpand={setExpand} />
         {expand ? null : (
           <>
-            <div className="mt-20 lg:ml-12 lg:mt-48 lg:pb-48 flex items-center lg:justify-between justify-around flex-wrap-reverse ">
+            <div className="mt-20 lg:ml-12 lg:mt-48 lg:pb-48 flex items-center lg:justify-between justify-around ">
               <div className="font-fredoka mt-8 tracking-wide text-white flex flex-col items-start justify-center  px-14">
                 <h1 className="text-4xl mb-2">Welcome to XSwap</h1>
                 <p className="text-xl max-w-md ">A decentralised staking and lending protocol built on top of XDC blockchain</p>
@@ -73,122 +73,12 @@ export default function Home() {
                   </button>
                 </Link>
               </div>
-              
+              <div className=" lg:max-w-2xl ">
+                <Image className="" alt="image" src={hero} />
+              </div>
             </div>
           </>
         )}
-      </div>
-      <div
-        className={`w-screen min-h-scree bg-[#07415c] no-repeat bg-cover text-center pt-10  flex items-center justify-center flex-col ${!expand
-          ? `bg-[#07415c] bg-cover lg:bg-center bg-no-repeat`
-          : `bg-[#07415c]`
-          }`}
-      >
-        <div className=" min-h-screen text-white w-full my-5 flex flex-col justify-center items-center mb-12 z-[1] lg:mb-20">
-          <h1 className=" text-3xl font-semiobold"> Our Main Features</h1>
-          <div className="w-11/12 grid md:grid-cols-3   md:gap-4 gap-3 mt-8  rounded-md">
-            <div className=" border px-6 py-10  bg-[#1c9bce] text-gray-800">
-              <h1 className=" text-2xl font-semibold mb-4 underline">
-                Swapping
-              </h1>
-              <p>
-                XSwap consists of an entire swap that allows you to swap your
-                tokens in the smoothest way possible, giving you a uniswap like
-                swapping experience
-              </p>
-            </div>
-            <div className=" border px-6 py-10 bg-[#07415c]">
-              <h1 className=" text-2xl font-semibold mb-4 underline">
-                Liquidity Pools
-              </h1>
-              <p>
-                XSwap allows users to create pool as well as adding and
-                removing liquidity with three different tokens by depositing
-                amount.
-              </p>
-            </div>
-            <div className=" border px-6 py-10 bg-[#1c9bce] text-gray-800 ">
-              <h1 className=" text-2xl font-semibold mb-4 underline">
-                Staking
-              </h1>
-              <p>
-                XSwap allows you to stake your tokens in the smart contract as
-                well as unstake them whenever needed, it also allows you to
-                claim the rewards whenever the user wished.
-              </p>
-            </div>
-            <div className=" border px-6 py-10 bg-[#07415c]">
-              <h1 className=" text-2xl font-semibold mb-4 underline">
-                Lending
-              </h1>
-              <p>
-                XSwap allows users to lend different tokens including customly
-                deployed ones, users can also borrow, withdraw, Repay and supply
-                tokens by interacting with the lending-contract.
-              </p>
-            </div>
-            <div className=" border px-6 py-10 bg-[#1c9bce] text-gray-800">
-              <h1 className=" text-2xl font-semibold mb-4 underline">
-                Stable Coin
-              </h1>
-              <p>
-                XSwap stableCoin allows users to get 1 USD worth of XDC tokens
-                by fetching the price from the coingecko api. In the future this
-                feature will be improved on a lot.
-              </p>
-            </div>
-            <div className=" border px-6 py-10 bg-[#07415c]">
-              <h1 className=" text-2xl font-semibold mb-4 underline">
-                Price Oracle
-              </h1>
-              <p>
-                XSwap has on chain pricefeeds from the pools not making users
-                reliant on other protocols at all and simplifying the process
-                with this feature.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* <Toast>
-          <div className="ml-3 text-sm font-normal">
-            Item moved successfully.
-          </div>
-          <Toast.Toggle />
-        </Toast> */}
-
-        {/* <div className="text-white w-full my-5 flex flex-col lg:mt-12 mt-20 justify-center items-center mb-12 z-[1] lg:mb-20">
-          <h1 className=" text-3xl font-semiobold"> Build with XSwap</h1>
-          <div className="w-11/12 flex flex-wrap justify-around items-center mt-8 px-6 py-8 rounded-md backdrop-blur-2xl">
-            <div className=" flex flex-col justify-start items-start flex-wrap">
-              <p className=" text-justify max-w-xl">
-                We also built a collection of contract-based layer as an
-                npm-package that anyone can use to build DeFi based applicions
-                on top of XDC-Chain
-              </p>
-              <button
-                type="button"
-                className="text-white  mt-6 bg-[#b49af9]  text-md font-fredoka active:bg-[#b49af9]  font-medium rounded-sm px-5 py-2.5 mb-2"
-              >
-                <a
-                  href="https://www.npmjs.com/package/xdefi-contracts"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Get Package
-                </a>
-              </button>
-            </div>
-            <div>
-              <span className=" ">
-                <pre className="  ">
-                  <code className="language-jsx">{howToInstall}</code>
-                  <code className="language-jsx">{howToUse}</code>
-                </pre>
-              </span>
-            </div>
-          </div>
-        </div> */}
       </div>
       <div className="w-ful">{expand ? null : <Footer />}</div>
     </>

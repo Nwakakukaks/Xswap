@@ -406,11 +406,11 @@ export default function Swap() {
   return (
     <div
     // `${styles.bg} `  
-      className={`w-screen min-h-screen no-repeat bg-cover bg-[url('../assets/landing.png')] bg-[#01250f]
+      className={`w-screen min-h-screen no-repeat bg-cover 
       ${
           !expand
-            ? `bg-[#01250f]`
-            : `bg-[#01250f]`
+            ? `bg-[#07415c]`
+            : `bg-[#07415c]`
         }
           `}
     >

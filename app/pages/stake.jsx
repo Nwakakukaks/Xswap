@@ -243,18 +243,18 @@ export default function Stake() {
 
   return (
     <div
-      className={`w-screen min-h-screen no-repeat bg-cover  bg-[url('../assets/landing.png')]
+      className={`w-screen min-h-screen no-repeat bg-cover 
       ${
         !expand
-          ? `bg-[#4532a1]`
-          : `bg-[#03071E]`
+          ? `bg-[#07415c]`
+          : `bg-[#07415c]`
       }
           `}
     >
       <Navbar expand={expand} setExpand={setExpand} />
       {expand ? null : (
         <>
-          <div className=" w-full mt-10 flex flex-col justify-center items-center px-2 pb-10">
+          <div className=" w-full mt-10 flex flex-col h-full justify-center items-center px-2 pb-10 pr-10" >
             <div className="w-full flex flex-col lg:w-7/12 justify-around">
               <h1 className=" text-gray-100 text-3xl font-semibold">Staking</h1>
             </div>
