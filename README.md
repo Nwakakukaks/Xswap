@@ -1,7 +1,7 @@
 # XSwap 
-Decentralized lending and staking platform on XDC blockchain
+A DeFi protocol built on top the XDC blockchain
 
 
 ### Live Link
 
-[Checkout the live website here](https://xdc-fi.vercel.app/)
+[Checkout the live website here](https://xdcswap.vercel.app/)
